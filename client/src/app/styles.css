@@ -1,0 +1,129 @@
+/* 微软计算器风格 */
+.calculator-container {
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2d2d; /* 深灰色背景 */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 页面背景 */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1a1a1a; /* 深色背景 */
+}
+
+/* 输入框和选择框样式 */
+input[type="number"],
+select {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 4px;
+  background-color: #3a3a3a; /* 深色输入框 */
+  color: #ffffff;
+  border: 1px solid #4a4a4a;
+  transition: all 0.2s ease;
+}
+
+/* 聚焦效果 */
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  
+}
+
+/* 按钮样式 */
+button {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background-color: #0078d7; /* 微软蓝 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* 按钮悬停效果 */
+button:hover {
+  background-color: #106ebe; /* 深微软蓝 */
+}
+
+/* 结果显示 */
+.result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+/* select 样式 */
+select {
+  background-color: #50b2cd; /* 统一背景色 */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* select 聚焦样式 */
+select:focus {
+  outline: none;
+ 
+}
+
+/* select 鼠标悬停样式 */
+
+
+/* 选项样式 */
+option {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+/* 选中选项的样式 */
+select option:checked {
+  background-color: #6c63ff; /* 选中项的背景颜色 */
+  color: white;
+}
+
+/* 鼠标悬停选项时的效果 */
+select option:hover {
+  background-color: #5e54e4; /* 悬停时背景颜色 */
+  color: white;
+}
+
+/* 给每个运算符选项添加不同的颜色 */
+select option[value="+"] {
+  background-color: #f8f8f8;
+  color: #4caf50; /* 绿色运算符 */
+}
+
+select option[value="-"] {
+  background-color: #f8f8f8;
+  color: #f44336; /* 红色运算符 */
+}
+
+select option[value="*"] {
+  background-color: #f8f8f8;
+  color: #ff9800; /* 橙色运算符 */
+}
+
+select option[value="/"] {
+  background-color: #f8f8f8;
+  color: #2196f3; /* 蓝色运算符 */
+}
